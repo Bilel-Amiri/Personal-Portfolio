@@ -1,0 +1,18 @@
+<div class="section" id="projects">
+  <div class="container cc-projects">
+    <div class="h4 text-center mb-4 title">Projects</div>
+
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let project of projects">
+        <div class="card h-100" data-aos="fade-up" data-aos-duration="500">
+          <div class="card-body">
+            <h5 class="card-title bg-primary text-white text-center">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <p><strong>Technologies:</strong> {{ project.tech }}</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
